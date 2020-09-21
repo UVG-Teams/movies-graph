@@ -29,3 +29,12 @@ Para instalar este programa se debe:
 
 ## Shortest Path query:
   MATCH (initial {name: 'Pixar'}), (final {name: 'Walt Disney'}), path = shortestPath((initial)-[*]-(final)) WITH path WHERE length(path)> 1 RETURN path;
+  
+  ### Ejemplos
+  MATCH (initial {name: 'Paramount Pictures'}), (final {name: 'Pixar'}), path = shortestPath((initial)-[*]-(final)) WITH path WHERE length(path)> 1 RETURN path
+  
+  MATCH (initial {name: 'Suspenso'}), (final {name: 'Epico'}), path = shortestPath((initial)-[*]-(final)) WITH path WHERE length(path)> 1 RETURN path
+  
+  MATCH (initial {name: 'Ciencia Ficcion'}), (final {name: '20th Century Fox'}), path = shortestPath((initial)-[*]-(final)) WITH path WHERE length(path)> 1 RETURN path
+  
+  MATCH (initial {name: 'M6'}), (final {name: '20th Century Fox'}), path = shortestPath((initial)-[*]-(final)) WITH path WHERE length(path)> 1 RETURN path
